@@ -1,0 +1,353 @@
+*{
+    margin: 0;
+    font-family: Arial;
+
+    /* border count in height and width */
+    border: border-box;
+}
+/* .border{
+    margin-right: 20px;
+} */
+.home-body{
+    display: block;
+}
+.hd{
+    height: 47px;          
+    background-color: #17181e;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.hd-left{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    
+    
+}
+.logo{
+    background-image: url(./mwallet.png);
+    background-size: cover ;
+    height: 22px;
+    width: 58px;
+    margin: 0px 16px 0px 16px;
+}
+
+.nav-block{
+    display: flex;
+    align-items: center;
+    /* flex-wrap: nowrap; */
+
+
+
+}
+
+.hd-switch{
+    height: 32px;
+    width: 165px;
+    background-color: #25282c;   
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    
+}
+.hd-switch1{
+    height: 28px;
+    width: 80px;
+    /* background-color: #3335s37;    */
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    text-decoration: none;
+    color: white;
+    font-size:0.75rem;
+    
+}
+
+.hd-switch1:hover {
+    background-color: #333537;   
+  }
+  
+
+.hd-menu{
+    margin-right: 0.3rem;
+    flex-shrink: 0;
+}
+.hd-square{
+    height: 47px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 10px 0px 10px;
+    /* margin: 0px 10px 0px 10px; */
+}
+.hd-square:hover{
+    color: orange;
+    background-color: #25262b;
+}
+
+.Square-img{
+    background-image: url(./mwallet.png);
+    background-size: cover ;
+    height: 24px;
+    width: 24px; 
+
+    /* convert rem */
+}
+.nav-menu{
+    font-size:0.8rem;
+    height: 47px;
+    font-weight:bold;
+    color: #ffffffe7;   
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+   
+}
+.shvh{
+    height: 100px;
+    width: 100px;
+}
+
+.nav-search{
+    display: flex;
+    align-items: center;
+    background-color: #292a30;
+    border-radius: 20px;
+    margin: 0 8px 0 12px;
+
+}
+.search-icon{
+    padding-left: 0.5rem;
+    font-size: 0.8rem;
+    color: hsla(0, 0%, 100%, .45);
+}
+
+.search-input{
+    background-color: #292a30;
+    border-radius: 20px; 
+    height: 29px;
+    width: 120px;
+    font-size: 0.75rem;
+    border: none;
+    /* for not shwing border when click */
+    outline: none; 
+    
+}
+.search-icon{
+    width: 20px ;
+    /* height: 20px;  */
+}
+
+
+.hd-right{
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    /* width: 200px; */
+}
+.right-menu{
+    height: 47px;
+    width: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.right-menu:not(.zzz):hover {
+    color: #de9c1c;
+    background-color: #25262b;
+}
+/* .right-menu:hover{
+    color: #de9c1c;
+    background-color: #25262b;
+} */
+.profile{   
+    background-image: url(./mwallet.png);
+    background-size:cover ;
+    height: 28px;
+    width: 28px;
+}
+
+/* //drop ddown menu */
+
+
+.menu-buy{
+    display: none;
+
+}
+
+.hd-square:hover .menu-buy {    
+    display: flex;
+    flex-direction: column;
+    position: absolute;    
+    background-color: #1e2023;
+    margin: 10px 10px 10px 10px;
+    margin-left: -10px  ;
+    margin-top: 16px;
+     padding: 10px 10px 10px 10px;
+     border-bottom-left-radius: 4px;
+     border-bottom-right-radius: 4px;
+}
+.menu-buy1{
+    display: flex;
+    flex-direction: column;
+    padding: 17px 17px 17px 17px  ;
+    
+    border-radius: 4px;
+    width: 250px;
+    
+}
+.menu-buy1:hover{
+    background-color: #2b2d30;   
+}
+.menu-buy1-2{
+    color: rgb(160, 160, 160);
+    font-size: 0.7rem;
+    margin-top: 6px;
+}
+/* .menu-buy1-0{
+    width: 250px;
+
+} */
+
+/* work in down */
+@media screen and (max-width: 1210px) {
+    .nav-menu, .nav-search {
+        display: none; /* Hide nav-menu and nav-search */
+    }
+}
+
+/* 
+/* profile dropdown */
+.profile-menu-allbox{
+    display: none;
+
+}
+.zzz:hover .profile-menu-allbox{
+    display: flex;
+    flex-direction: column;
+    position: absolute;    
+    background-color: #1e2023;
+    margin-left: -100px  ;
+    margin-top: 37px;
+     padding: 10px 10px 10px 10px;
+     border-bottom-left-radius: 4px;
+     border-bottom-right-radius: 4px  
+}
+.pro-1box{
+    margin: 13px 13px 13px 13px;
+}
+.profile-menu1{
+    display: flex;
+    justify-content: space-evenly;
+}
+.pro-profile{
+    background-image: url(./mwallet.png);
+    background-size:cover ;
+    height: 38px;
+    width: 38px;
+}
+.pro-mail-main-uid{
+    display: flex;
+    flex-direction: column;
+}
+.pro-mail-mainac{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: small;
+}
+.pro-main-ac{
+    color: #d48d08;
+    font-size: small;
+    background-color: #e4b1523a;
+    border-radius: 2px;
+}
+.pro-uid{
+    color: #5c5d5f;
+    font-size: small;
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+
+.hd-square {
+    position: relative; 
+}
+
+.dropdown-content {
+    display: none; 
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    background-color: #1e2023;
+    padding: 10px;
+    border-radius: 4px;
+    z-index: 1;
+    width: 250px;
+    color: #fff;
+}
+
+.hd-square:hover .dropdown-content {
+    display: block; 
+}
+
+.dropdown-content .Promotions,
+.dropdown-content .Learn {
+    margin-bottom: 10px;
+}
+
+.dropdown-content h3 {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.dropdown-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown-content li {
+    margin-bottom: 5px;
+    font-size: 0.85rem;
+}
+
+.dropdown-content li:hover {
+    background-color: #2b2d30;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+
+
+ */
+
+
+
+
+
+
+
+   
+   
